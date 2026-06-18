@@ -1,28 +1,3 @@
-body {
-  margin: 0;
-  background: #111;
-  color: #f0f0f0;
-  font-family: sans-serif;
-}
 
-.landing {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.landing__name {
-  font-size: 3.5rem;
-  margin: 0;
-}
-.landing__title {
-  font-size: 1.5rem;
-  color: #e8ff47;
-}
-.landing__tagline {
-  color: #888;
-  margin-top: 0.5rem;
-}
 
 /*# sourceMappingURL=main.css.map */
