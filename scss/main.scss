@@ -1,39 +1,76 @@
-<section class="projects" id="projects">
-  <h2 class="projects__heading">Projects</h2>
-  <div class="projects__grid">
+body {
+  margin: 0;
+  background: #111;
+  color: #f0f0f0;
+  font-family: sans-serif;
+}
 
-    <article class="projects__card">
-      <h3 class="projects__name">QuoteMate</h3>
-      <p class="projects__description">Quoting and invoicing SaaS for Australian tradespeople. Built with JavaScript, Supabase, Stripe, and Netlify.</p>
-      <div class="projects__links">
-        <a class="projects__link" href="https://getquotemate.com.au" target="_blank" rel="noopener">Live</a>
-        <a class="projects__link" href="https://github.com/xtcace/quotemate" target="_blank" rel="noopener">Code</a>
-      </div>
-    </article>
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-    <article class="projects__card">
-      <h3 class="projects__name">MateSuite</h3>
-      <p class="projects__description">Umbrella platform bringing together a suite of micro-SaaS tools for tradies. JavaScript, Supabase, Netlify.</p>
-      <div class="projects__links">
-        <a class="projects__link" href="https://matesuite.com.au" target="_blank" rel="noopener">Live</a>
-      </div>
-    </article>
+  &__name {
+    font-size: 3.5rem;
+    margin: 0;
+  }
 
-    <article class="projects__card">
-      <h3 class="projects__name">E.T. Radiator</h3>
-      <p class="projects__description">Business site for an auto radiator shop, with a Supabase-backed booking portal and admin dashboard. JavaScript, Supabase, Netlify.</p>
-      <div class="projects__links">
-        <a class="projects__link" href="https://etradiator.com.au" target="_blank" rel="noopener">Live</a>
-      </div>
-    </article>
+  &__title {
+    font-size: 1.5rem;
+    color: #e8ff47;
+  }
 
-    <article class="projects__card">
-      <h3 class="projects__name">Seyla Transport</h3>
-      <p class="projects__description">Marketing website for a transport company. Built with Next.js — responsive and fast-loading.</p>
-      <div class="projects__links">
-        <a class="projects__link" href="https://seylatransport.com.au" target="_blank" rel="noopener">Live</a>
-      </div>
-    </article>
+  &__tagline {
+    color: #888;
+    margin-top: 0.5rem;
+  }
+}
 
-  </div>
-</section>
+.projects {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  &__heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  &__name {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    color: #aaa;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__link {
+    color: #e8ff47;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

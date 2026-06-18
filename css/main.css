@@ -1,17 +1,68 @@
-/* Error: expected "{".
- *    ,
- * 39 | </section>
- *    |           ^
- *    '
- *   scss\main.scss 39:11  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 39 \2502  </section>\a    \2502            ^\a    \2575 \a   scss\\main.scss 39:11  root stylesheet';
+body {
+  margin: 0;
+  background: #111;
+  color: #f0f0f0;
+  font-family: sans-serif;
 }
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.landing__name {
+  font-size: 3.5rem;
+  margin: 0;
+}
+.landing__title {
+  font-size: 1.5rem;
+  color: #e8ff47;
+}
+.landing__tagline {
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.projects {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.projects__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.projects__card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+.projects__name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.projects__description {
+  color: #aaa;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.projects__links {
+  display: flex;
+  gap: 1rem;
+}
+.projects__link {
+  color: #e8ff47;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
